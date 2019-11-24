@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--simple JavaScript form with validation thanks to -> https://www.youtube.com/watch?v=wc5k2AMPED0&list=WL&index=4&t=0s -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Forma</title>
+    <link rel="shortcut icon" type="image/jpg" href="slike/favikon.jpg">
+    <script>src="js/kod.js"</script>
+  </head>
+
+  <body id="formabody">
+      <div id="wrap">
+          <nav class="main-nav">
+              <ul>
+                  <li><img src="slike/logo.png" width=75px></li>
+                  <li><a href="index.html">Početna</a></li>
+                  <li><a href="destinacije.html">Destinacije</a></li>
+                  <li><a href="galerijafinalna.html">Galerija</a></li>
+                  <li><a href="forma.html">Registracija</a></li>
+                  <li><a href="#">Kontakt</a></li>
+              </ul>
+          </nav>
+    
+        <form id="flex-container">
+      <div id="glavna">
+      <div class="field-name">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Korisničko ime" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-email innactive">
+        <i class="fas fa-envelope"></i>
+        <input type="Email" placeholder="E-mail" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+      <div class="field-password innactive">
+        <i class="fas fa-key"></i>
+        <input type="password" placeholder="Lozinka" required />
+        <i class="fas fa-arrow-down"></i>
+      </div>
+
+   <div class="field-finish innactive">
+            <i class="fas fa-heart"></i>
+            <p>Hvala što ste se registrovali!</p>
+            <i class="fas fa-heart"></i>
+          </div>
+      
+
+    </div>
+     <div id="formica">
+      <div>
+        <fieldset>
+        
+          <legend id="title5" class="desc">
+            Koliko često putujete?
+          </legend>
+          
+          <div>
+            <input id="radioDefault_5" name="Field5" type="hidden" value="">
+            <div>
+              <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+              <label class="choice" for="Field5_0">Više od 15 puta godišnje</label>
+            </div>
+            <div>
+              <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+              <label class="choice" for="Field5_1">Od 10 do 15 puta godišnje</label>
+            </div>
+            <div>
+              <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+              <label class="choice" for="Field5_2">Manje od 10 puta godišnje</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      
+      <div>
+        <fieldset>
+          <legend id="title6" class="desc">
+            Zašto uglavnom putujete?
+          </legend>
+          <div>
+            <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+            <label class="choice" for="Field6">Da upoznam kulturu drugih nacija</label>
+          </div>
+          <div>
+            <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
+            <label class="choice" for="Field7">Da bih upoznao ljude</label>
+          </div>
+          <div>
+            <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+            <label class="choice" for="Field8">Uglavnom poslovno</label>
+          </span>
+          </div>
+        </fieldset>
+      </div>
+      <input type="submit" name="submit" value="Potvrdite"/>
+
+      <div id="prozor">
+        <p id="demo"></p>
+        <input type="button" value = "Zatvori" onclick="newWindowObj.close()"/>
+        <input type="button" value = "Pomeri" onclick="move()"/>
+        <a href = "uslovi.pdf" target="newWindow">USLOVI KORIŠĆENJA</a>
+</div>
+    </div>
+    
+   
+
+
+
+
+
+
+      
+    </form>
+      </div>
+    <script type="text/javascript" src="js/kod.js"></script>
+    <script type="text/javascript" src="js/prozor.js"></script>
+  </body>
+</html>
